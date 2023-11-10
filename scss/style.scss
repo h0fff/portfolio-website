@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+// Update Bulma's global variables
+$family-sans-serif: 'Roboto Mono', monospace;
+
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(44, 100%, 77%) !default;
+$green: hsl(153, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(207, 61%, 53%) !default;
+$blue: hsl(229, 53%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+// Update some of Bulma's component variables
+$body-background-color: $white-ter;
+
+@import "../node_modules/bulma/bulma.sass";
+
+h1,
+h2 {
+    z-index: 1;
+}
+
+#mySVG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    /* Set a lower z-index to position it behind other elements */
+}
+
+hr {
+    width: 3rem; /* Adjust the percentage to change the width */
+    border-radius: 0.5rem;
+    padding: 0.15rem;
+}

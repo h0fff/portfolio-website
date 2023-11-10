@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "main": "index.html",
+  "license": "LICENSE.md",
+  "scripts": {
+    "start": "sass --watch --no-source-map scss/style.scss:css/style.css"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
